@@ -76,11 +76,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1oW-iw-HEY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="sba-gs-y0T">
+                    <navigationBar key="navigationBar" alpha="0.59999999999999998" contentMode="scaleToFill" translucent="NO" id="sba-gs-y0T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.54327818656858085" green="0.78362977910199405" blue="0.97726362179487181" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.97726362179487181" green="0.84839647809331731" blue="0.37221104653059206" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
