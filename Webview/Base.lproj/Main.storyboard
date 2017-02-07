@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1oW-iw-HEY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Webview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Mo-D4-V5A"/>
+                        <viewControllerLayoutGuide type="bottom" id="yCV-QU-pO8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4S-gr-t4x">
+                                <rect key="frame" x="138" y="217" width="45" height="30"/>
+                                <state key="normal" title="点击我"/>
+                                <connections>
+                                    <segue destination="5ZY-My-Mka" kind="push" id="nYv-Fi-rAX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="nNL-vm-oBJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="442"/>
+        </scene>
+        <!--煎蛋🍳-->
+        <scene sceneID="ESn-1b-srD">
+            <objects>
+                <viewController id="5ZY-My-Mka" customClass="WebViewController" customModule="Webview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lUn-VF-ZLH"/>
+                        <viewControllerLayoutGuide type="bottom" id="8f7-vy-Lcj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="udn-n6-uy7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlj-p7-l5o">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="204-if-b0V">
+                                <rect key="frame" x="150" y="236" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hlj-p7-l5o" firstAttribute="leading" secondItem="udn-n6-uy7" secondAttribute="leading" id="4Ml-DH-N5V"/>
+                            <constraint firstItem="hlj-p7-l5o" firstAttribute="centerY" secondItem="udn-n6-uy7" secondAttribute="centerY" id="7o9-6W-fx3"/>
+                            <constraint firstItem="hlj-p7-l5o" firstAttribute="top" secondItem="lUn-VF-ZLH" secondAttribute="bottom" id="MMb-Ns-OiA"/>
+                            <constraint firstItem="hlj-p7-l5o" firstAttribute="centerX" secondItem="udn-n6-uy7" secondAttribute="centerX" id="kxg-BF-mjw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="煎蛋🍳" id="dmp-ot-4Vf"/>
+                    <connections>
+                        <outlet property="WebView" destination="hlj-p7-l5o" id="31g-DH-LyY"/>
+                        <outlet property="jiazai" destination="204-if-b0V" id="Oim-8F-hvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FD-TH-iY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="442"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FGf-Yk-3P4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1oW-iw-HEY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="sba-gs-y0T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.54327818656858085" green="0.78362977910199405" blue="0.97726362179487181" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="doh-hh-z9a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiW-bT-8vF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="442"/>
+        </scene>
+    </scenes>
+</document>
